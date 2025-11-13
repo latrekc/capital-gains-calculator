@@ -121,7 +121,7 @@ def action_from_str(label: str) -> ActionType:
     if label == "Reinvest Dividend":
         return ActionType.REINVEST_DIVIDENDS
 
-    if label == "Wire Funds Received":
+    if label in ["Wire Funds Received", "Wire Received"]:
         return ActionType.WIRE_FUNDS_RECEIVED
 
     if label == "Stock Split":
